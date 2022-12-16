@@ -11,7 +11,7 @@ const {src , dest, series, watch} = require('gulp'),
 function pugToHtml() {
     return src('src/pug/index.pug')
         .pipe(pug())
-        .pipe(dest('dist'));
+        .pipe(dest('docs'));
 };
 
 function toCss() {
@@ -23,13 +23,13 @@ function toCss() {
         .pipe(csso())
         .pipe(con('css/styles-min.css'))
         .pipe(cssmin())
-        .pipe(dest('dist'))
+        .pipe(dest('docs'))
 }
 
 function serve() {
     sync.init({
         server: {
-            baseDir: "./dist"
+            baseDir: "./docs"
         },
         online: true,
         tunnel: true

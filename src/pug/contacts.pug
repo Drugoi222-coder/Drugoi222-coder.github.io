@@ -1,0 +1,30 @@
+footer.contacts
+    .container
+        .contacts__wrap
+            .contacts__img
+                img(src="https://s2-goods.ozstatic.by/2000/993/950/10/10950993_0.jpg")
+            .info.contacts__main-info
+                h2.info__name Контакты
+                h1.info__role Свяжитесь со мной
+                .info__dev.info__dev_place_left
+                p.contacts__txt Любым удобным для вас способом:
+                .contacts__img-wrap
+                    .contacts__icon
+                        img(src="img/Facebook.svg")
+                    .contacts__icon
+                        img(src="img/Instagram.svg")
+                    .contacts__icon
+                        img(src="img/Telegram.svg")
+                p.contacts__txt Или оставьте ваши данные и я сама вам напишу:
+                form.contacts__form
+                    .contacts__person
+                        .contacts__input
+                            label(for='name') Ваше имя
+                            input(name='name' id='name' type='text').contacts__name
+                        .contacts__input
+                            label(for='email') Ваша почта
+                            input(name='email' id='email' type='email').contacts__email
+                    .contacts__input
+                        label(for='message') Ваше сообщение
+                        textarea(name="message" id='message', cols="30", rows="10").contacts__message
+                    button(type='submit').contacts__submit Отправить сообщение

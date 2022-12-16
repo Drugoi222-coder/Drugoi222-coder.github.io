@@ -1,0 +1,35 @@
+@import _another
+.social
+    width: 24px
+    position: fixed
+    top: 230px
+    left: 26px
+    & *
+        cursor: pointer
+    & svg
+        margin-bottom: 15px
+        &:first-child
+            margin-top: 0
+    &__devider
+        height: 70px
+        width: 0px
+        border: 1px solid $color-header
+        margin-left: 124%
+    &__header
+        writing-mode: vertical-rl
+        transform: rotate(180deg)
+        margin-top: 20px
+        color: $color-header
+    &__hamburger
+        position: absolute
+        cursor: pointer
+        top: 20px
+        right: 30px
+    &__dev
+        width: 60px
+        border: 1px solid $main-color
+        margin-left: 4px
+        &_place_center
+            margin: 25px auto
+    &__icons
+        margin-left: 85%

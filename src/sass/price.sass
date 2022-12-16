@@ -1,0 +1,45 @@
+@import _another
+.price
+    &__info.info
+        margin-top: 66px
+        @include no-back
+        .info__name
+            font-size: 20px
+            &::before
+                left: 31px
+                top: -4px
+    &__wrap
+        display: flex
+        flex-direction: column
+        &-columns
+            padding: 0 10px 0 55px
+            display: flex
+            justify-content: space-between
+    &__card
+        width: 370px
+        position: relative
+        &::before
+            position: absolute
+            width: 15px
+            height: 15px
+            content: ""
+            background-color: $main-color
+            border-radius: 100%
+            top: 4px
+            left: -30px
+    &__headgroup
+        display: flex
+        justify-content: space-between
+    &__header
+        font-size: 18px
+        line-height: 21px
+        font-weight: 700
+    &__cost
+        font-weight: 700
+        font-size: 18px
+        line-height: 21px
+    &__descr
+        font-weight: 300
+        line-height: 18px
+        font-size: 16px
+            

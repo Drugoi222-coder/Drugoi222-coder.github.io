@@ -1,0 +1,14 @@
+include portfolio__example.pug
+section.portfolio
+    .portfolio__container
+        .portfolio__info.info
+            h2.info__name.info__name_place-circle_center Портфолио
+            h1.info__role.info__role_place_center Мои работы
+            .info__dev.info__dev_place_center
+        .portfolio__examples
+            +portfolio__example("img/uber.jpg","portfolio__example_number_1","https://drugoi222-coder.github.io/%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE/")
+            +portfolio__example("img/pulse.jpg","portfolio__example_number_2")
+            +portfolio__example("img/bread.jpg","portfolio__example_number_3")
+            +portfolio__example("img/plans.jpg","portfolio__example_number_4")
+            +portfolio__example("img/ipad.jpg","portfolio__example_number_5")
+            +portfolio__example("img/mac.jpg","portfolio__example_number_6")

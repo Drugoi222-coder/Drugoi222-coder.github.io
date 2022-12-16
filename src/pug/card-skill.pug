@@ -1,0 +1,8 @@
+mixin card-skill(src,eclass,header,anons,descr)
+    .card-skill(class=eclass)
+        .card-skill__img
+            img(src=src)
+        .card-skill__info 
+            h3.card-skill__header=header
+            p.card-skill__anons=anons
+            p.card-skill__descr=descr

@@ -1,0 +1,33 @@
+@import _another
+.bar
+    position: relative
+    &__header
+        font-size: 18px
+        margin-left: 17px
+        font-size: 18px
+    &__txt
+        display: flex
+        justify-content: space-between
+    &__percent
+        font-size: 18px
+    &::before
+        content: ""
+        position: absolute
+        width: 36px
+        height: 36px
+        top: -4px
+        left: 6px
+        z-index: -1
+        background: $main-color
+        border-radius: 100%
+    &__dev
+        width: 320px
+        height: 14px
+        margin-top: 27px
+        border-radius: 4px
+        background-color: #E8E4DE
+    &__progress
+        width: 75%
+        height: 14px
+        border-radius: 4px
+        background-color: $main-color

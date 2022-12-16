@@ -1,0 +1,34 @@
+@import _another
+.portfolio
+    &__container
+        width: 1115px
+        margin: 0 auto
+    &__info.info
+        @include no-back
+        padding-top: 75px
+        .info__name
+            font-size: 20px
+            &::before
+                left: 29.5px
+    &__examples
+        display: grid
+        margin-right: 20px
+        margin-top: 60px
+        gap: 5px 5px
+        grid-template-areas: "A B C D" "E F F D"
+    &__example
+        display: grid
+        cursor: pointer
+        &_number
+            &_1
+                grid-area: A
+            &_2
+                grid-area: B
+            &_3
+                grid-area: C
+            &_4
+                grid-area: D
+            &_5
+                grid-area: E
+            &_6
+                grid-area: F

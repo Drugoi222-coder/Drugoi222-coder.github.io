@@ -1,0 +1,63 @@
+@import _another
+.nav-bar
+    &__panel
+        position: absolute
+        background: $main-color
+        width: 345px
+        height: 105vh
+        z-index: 3
+        left: -345px
+        top: 0
+        transition: all 0.5s ease
+        &_on
+            left: 0px
+    &__list
+        list-style-type: none
+        padding: 0
+        margin-top: 140px
+        margin-left: 75px
+        line-height: 36px
+    &__item
+        width: 150px
+        color: $nav-bar_color
+        position: relative
+        font-size: 24px
+        cursor: pointer
+        text-transform: uppercase
+        margin-top: 15px
+        &::before
+            content: ""
+            top: 12px
+            left: -35px
+            position: absolute
+            width: 15px
+            height: 15px
+            border: 1px solid #000000
+            border-radius: 100%
+    &__close
+        position: absolute
+        top: 25px
+        right: 25px
+        cursor: pointer
+    &__social
+        position: absolute
+        right: 127px
+        bottom: 8%
+        img
+            height: 20px
+    &__icon
+        cursor: pointer
+        display: inline
+        margin-left: 15px
+    &__background
+        visibility: hidden
+        position: absolute
+        transition: .5s all ease
+        top: 0
+        left: 0
+        z-index: 1
+        width: 100vw
+        height: 100vh
+        &_on
+            visibility: visible
+            background-color: rgba(255, 255, 255, 0.75)

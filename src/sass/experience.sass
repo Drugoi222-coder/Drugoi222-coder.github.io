@@ -1,0 +1,54 @@
+@import _another
+.xp
+    &__info.info
+        @include no-back
+        .info__name
+            font-size: 20px
+    &__columns
+        width: 1150px
+        margin: 0 auto
+        margin-top: 60px
+        display: flex
+        justify-content: space-around
+    &__wrap
+        display: flex
+        flex-direction: column
+    &__card.card-skill
+        margin-top: 45px
+        width: 400px
+        &:before
+            top: 0
+            left: 0
+        &::after
+            content: ""
+            position: absolute
+            top: 18px
+            left: -41px
+            z-index: -2
+            width: 42px
+            border: 1px solid #000000
+        .card-skill__anons,.card-skill__header
+            margin-left: 50px
+        .card-skill__img
+            top: 18px
+            left: 15px
+    &__header
+        margin: 0
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            border-radius: 100%
+            width: 17px
+            height: 17px
+            top:12px
+            left: -50px
+            background-color: $main-color
+        &::after
+            content: ""
+            position: absolute
+            top: 18px
+            left: -43px
+            z-index: -2
+            height: 343px
+            border: 1px solid #000000

@@ -1,0 +1,33 @@
+@import _another
+.about
+    padding: 75px
+    &__img img
+        width: 85%
+    &__wrap
+        display: flex
+        justify-content: space-between
+    &__full-info
+        margin-left: 10px
+    &__main-info.info
+        @include no-back
+        height: 100px
+        margin-top: 50px
+        & .info__role
+            font-size: 36px
+            margin: 0
+    &__descr
+        width: 570px
+        text-align: justify
+        font-weight: 500
+        font-size: 22px
+        line-height: 30px
+        margin: 0
+    &__skills
+        display: flex
+        flex-wrap: wrap
+        margin-top: 40px
+        width: 700px
+    &__card-skill
+        margin-left: 65px
+        &:nth-child(2n)
+            margin-left: 115px

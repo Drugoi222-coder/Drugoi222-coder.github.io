@@ -1,0 +1,17 @@
+include card-skill.pug
+section.about
+    .container
+        .about__wrap
+            .about__img
+                img(src="https://s2-goods.ozstatic.by/2000/993/950/10/10950993_0.jpg", alt="cat")
+            .about__full-info
+                .info.about__main-info
+                    h2.info__name Про меня
+                    h1.info__role Меня зовут Богдан
+                    .info__dev.info__dev_place_left
+                p.about__descr Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi a voluptatem eum error facilis veniam dignissimos ducimus facere, exercitationem asperiores deserunt impedit inventore esse soluta, delectus ipsam! Cupiditate, hic placeat!
+                - var n = 0;
+                .about__skills
+                    while n < 3
+                        +card-skill("img/web development.svg","about__card-skill","Web-разработка",'',"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi a voluptatem eum error facilis veniam")
+                        - n++

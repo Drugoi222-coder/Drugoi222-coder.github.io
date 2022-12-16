@@ -1,0 +1,18 @@
+include card-skill.pug
+article.xp
+    .container     
+        .info.xp__info
+            h2.info__name.info__name_place-circle_center Опыт
+            h1.info__role.info__role_place_center Чем я буду полезен
+            .info__dev.info__dev_place_center
+        .xp__columns
+            .xp__column-1
+                h3.xp__header Образование
+                .xp__wrap
+                    +card-skill('img/University.svg','xp__card','Московский Авиационный Институт','Диплом бакалавра | Москва (2021-2025)','Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi a voluptatem eum error facilis veniam')
+                    +card-skill('img/Courses.svg','xp__card', 'Udemy','Курсы по web-разаботке', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi a voluptatem eum error facilis veniam')
+            .xp__column-2
+                h3.xp__header Опыт работы
+                .xp__wrap
+                    +card-skill('img/Developer.svg','xp__card','Front-End Developer','Ничего | Москва (2022-2023)', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi a voluptatem eum error facilis veniam')
+                    +card-skill('img/designer.svg','xp__card','Front-End Developer','Ничего | Москва (2023-2024)', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi a voluptatem eum error facilis veniam')

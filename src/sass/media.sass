@@ -1,0 +1,233 @@
+@import _another
+@media (max-width: 1400px)
+    header.info
+        padding-left: 150px
+    .social
+        left: 5px
+    .contacts__wrap
+        width: 1030px
+@media (max-width: 1250px)
+    .social
+        left: -10px
+@media (max-width: 1200px)
+    .about
+        &__full-info
+            width: 65%
+        &__skills
+            width: 102%
+        &__card-skill
+            &:nth-child(2n)
+                margin-left: 70px
+    .xp
+        &__columns
+            width: 910px
+            margin-left: 30px
+    .instr
+        &__cards
+            margin-left: 55px
+        &__bar
+            margin-left: 75px
+    .portfolio
+        &__container
+            width: auto
+        &__examples
+            margin: 0 auto
+            width: 850px
+            grid-template-areas: "A B C" "E F D"
+        &__example
+            img
+                object-fit: cover
+                width: 280px
+                height: 280px
+    .contacts
+        &__wrap
+            width: 860px
+        &__main-info.info
+            margin-top: 25px
+            margin-left: 0
+@media (max-width: 992px)
+    .about
+        &__full-info
+            margin-left: 2px
+        &__descr
+            width: 400px
+    .card-skill
+        width: 300px
+        &__descr
+            font-size: 18px
+    .xp
+        &__columns
+            display: block
+            margin-top: 0
+            margin-left: 170px
+            width: auto
+        &__column
+            &-1,&-2
+                margin-top: 40px
+    .instr
+        &_card
+            margin: 6.5px auto
+        &__cards
+            margin: 0 auto
+        &__bar
+            width: 320px
+            margin: 20px auto
+        &__bars
+            width: 46%
+            margin: 20px auto
+    .portfolio
+        &__examples
+            width: 563px
+            grid-template: 1fr 1fr 1fr / 1fr 1fr
+            *
+                grid-area: auto
+    .price
+        &__wrap-columns
+            display: block
+            width: 360px
+            margin: 0 auto
+            padding: 0
+    .contacts
+        &__img
+            display: none
+        &__wrap
+            width: 585px
+            margin: 60px auto
+@media (max-width: 768px)
+    header.info
+        padding-left: 60px
+    .info
+        &__role
+            font-size: 40px
+        &__buttons-wrap
+            *
+                font-size: 17px
+        &__portfolio
+            margin-top: 15px
+    .about
+        padding-top: 45px
+        &__full-info
+            width: 360px
+            margin: 0 auto
+        &__wrap
+            display: block
+        &__img
+            margin: 0 auto
+            width: 235px
+            img
+                width: 270px
+    .xp
+        &__columns
+            width: 300px
+            margin: 0 auto
+        .card-skill
+            &__descr
+                font-size: 19px
+                width: 360px
+    .instr
+        &__bars
+            width: 64%
+    .portfolio
+        &__examples
+            width: 280px
+            grid-template: repeat(6,1fr) / 1fr
+    .contacts
+        &__wrap
+            width: 345px
+            margin: 30px auto
+        &__person
+            display: block
+            input
+                width: 345px
+            .contacts__input:nth-child(2)
+                margin-left: 0
+        &__input
+            textarea
+                min-width: auto
+                width: 345px
+@media (max-width: 576px)
+    header.info
+        .info
+            &__role
+                font-size: 32px
+    .about
+        padding: 45px 0
+        &__full-info
+            width: 290px
+        &__descr
+            width: 290px
+            font-size: 20px
+        &__card-skill
+            .card-skill
+                &__descr
+                    width: 220px
+        &__img
+            width: 265px
+    .xp
+        &__card.card-skill
+            width: 250px
+        .card-skill__descr
+            width: 230px
+            font-size: 18px
+        &__card.card-skill
+            height: auto
+        &__columns
+            width: 185px
+    .instr
+        &__bars
+            width: 81%
+    .price
+        &__card
+            width: 270px
+        &__wrap-columns
+            width: 260px
+@media (max-width: 425px)
+    .social
+        display: none
+    header.info
+        padding-left: 30px
+    .nav-bar
+        &__panel_on
+            width: 280px
+        &__social
+            right: 35%
+    .instr
+        &__bar
+            width: 260px
+        &__cards
+            width: 70%
+        &__bars
+            width: 75%
+    .bar
+        &__dev
+            width: 260px
+    .price
+        &__wrap-columns
+            width: 240px
+    .contacts
+        &__main-info.info
+            width: 290px
+            margin: 0 auto
+        &__input
+            input,textarea
+                width: 280px
+@media (max-width: 375px)
+    header.info
+        padding-left: 15px
+    .nav-bar
+        &__list
+            margin-left: 60px
+        &__panel
+            &_on
+                width: 240px
+    .instr
+        &__cards
+            width: 95%
+        &__bars
+            width: 90%
+    .portfolio
+        &__info.info
+            margin-top: 40px
+    .contacts
+        &__wrap
+            width: 280px

@@ -5,8 +5,7 @@ const {src , dest, series, watch} = require('gulp'),
     pref = require('gulp-autoprefixer'),
     sync = require('browser-sync').create(),
     con = require('gulp-concat'),
-    cssmin = require('gulp-cssmin'),
-    json = require('gulp-json-srv')
+    cssmin = require('gulp-cssmin')
 
 function pugToHtml() {
     return src('src/pug/index.pug')
@@ -39,14 +38,6 @@ function serve() {
     watch('src/sass/**.sass', series(toCss)).on('change', sync.reload)
 }
 
-// Для fetch POST
-// function jsonSrv() {
-//     let server = json.create();
-//     return src("./dist/db.json")
-//         .pipe(server.pipe());
-// }
-
 exports.toCss = toCss;
 exports.pugToHtml = pugToHtml;
-// exports.jsonSrv = jsonSrv;
 exports.default = series(pugToHtml,toCss,serve);
